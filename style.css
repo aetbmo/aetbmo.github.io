@@ -32,7 +32,7 @@ blockquote:before {
     display: block;
     height: 0;
     content: "\201C";
-    margin-left: -.95em;
+    margin-left: -0.75em;
     font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
     color: #999;
 }
@@ -318,6 +318,9 @@ figure {
 figure img.scaled {
   width: 100%;
 }
+img {
+  object-fit: cover;
+}
 
 .container.tiles{
   display: flex;
@@ -332,8 +335,37 @@ figure img.scaled {
   position: relative;
   background-color: rgb(45,45,45);
 }
+.tiles .item blockquote {
+    padding-top:10px;
+}
+.tiles .item blockquote:before {
+    margin-left: -0.5em;
+}
+
+.tiles .item blockquote p,
+.tiles .item blockquote cite {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.tiles .item blockquote p:first-child {
+    margin-top: 0;
+}
 
 .cta--contact-link {
     color: white;
     font-size: 1.3em;
 }
+
+@media only screen and (max-width: 1000px) {
+    .tiles .item {
+        width: 49%;
+      }
+}
+
+@media only screen and (max-width: 600px) {
+    .tiles .item {
+        width: 100%;
+      }
+  }
