@@ -358,14 +358,24 @@ img {
     font-size: 1.3em;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .tiles .item {
         width: 49%;
       }
+    .tiles .item blockquote p,
+    .tiles .item blockquote cite {
+        font-size: 18px;
+        line-height: 26px;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 870px) {
     .tiles .item {
         width: 100%;
+      }
+      .tiles .item blockquote p,
+      .tiles .item blockquote cite {
+          font-size: 18px;
+          line-height: 26px;
       }
   }
