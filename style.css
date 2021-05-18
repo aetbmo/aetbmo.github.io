@@ -91,12 +91,15 @@ h2,h3,h4,h5 {
 }
 .panel--bg.bg--media > .container  > .media img{
     width: 100%;
+    object-fit: contain;
+}
+.home .panel--bg.bg--media > .container  > .media img{
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .panel--hero {
     box-shadow: inset 0px -10px 80px 20px black;
-    height: calc(100vh - 45px);
     top:45px;
     margin-bottom: 55px;
 }
@@ -206,7 +209,7 @@ p {
 
 .hero {
     color: #FFFFFF;
-    padding: calc(97vh - 306px) 40px 0px 40px;
+    padding: 50% 40px 0px 40px;
 	margin-bottom:45px;
 }
 .home .hero {
@@ -217,7 +220,7 @@ p {
 
 .hero h1 {
     text-transform: uppercase;
-    font-family: fantasy;
+    font-family: fantasy, Verdana, sans-serif;
     font-size: 75px;
     margin: 36px 0 10px;
     letter-spacing: 2px;
@@ -378,4 +381,7 @@ img {
           font-size: 18px;
           line-height: 26px;
       }
+      .hero h1 {
+        font-size: 55px;
+    }
   }
